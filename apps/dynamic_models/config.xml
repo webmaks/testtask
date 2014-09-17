@@ -1,21 +1,3 @@
-INSTALL
-
-activate virtualenv and install requirements.
-
-```
-pip install -r req.txt
-./manage.py syncdb
-./manage.py migrate --all
-./manage.py runserver
-```
-
-Enjoy!
-
-
-config format for dynamic_models is xml
-cat apps/dynamic_models/config.xml
-
-```
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <model name="users" title="Пользователи">
@@ -29,6 +11,6 @@ cat apps/dynamic_models/config.xml
   <model name="officies" title="Офисы">
     <field id="address" type="char" title="Адрес" />
     <field id="description" type="text" title="Описание" />
+    <field id="mode" type="text" title="Режим работы" />
   </model>
 </root>
-```
